@@ -26,4 +26,21 @@ func main() {
 	default:
 		fmt.Println("DEFAULT case for x")
 	}
+
+	for i := 0; i < 5; i++ {
+		fmt.Printf("Counting to five: %v\n", i)
+	}
+
+	for y < 10 {
+		fmt.Printf("y is %v\n", y)
+		y++
+	}
+
+	for {
+		fmt.Printf("y is %v\n", y)
+		if y > 10 {
+			break
+		}
+		y++
+	}
 }
