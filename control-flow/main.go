@@ -31,11 +31,12 @@ func main() {
 		fmt.Printf("Counting to five: %v\n", i)
 	}
 
+	fmt.Println("Second type of for loop")
 	for y < 10 {
 		fmt.Printf("y is %v\n", y)
 		y++
 	}
-
+	fmt.Println("Third type of for loop")
 	for {
 		fmt.Printf("y is %v\n", y)
 		if y > 10 {
