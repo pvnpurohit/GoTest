@@ -13,6 +13,17 @@ func main() {
 	} else if x == 42 {
 		fmt.Println("equal to 42")
 	} else {
-		fmt.Println("Its greater than 42")
+		fmt.Println("greater than 42")
+	}
+
+	switch {
+	case x < 42:
+		fmt.Println("LESS than 42")
+	case x == 42:
+		fmt.Println("EQUAL to 42")
+	case x > 42:
+		fmt.Println("GREATER than 42")
+	default:
+		fmt.Println("DEFAULT case for x")
 	}
 }
