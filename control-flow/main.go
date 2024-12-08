@@ -70,11 +70,13 @@ func main() {
 		fmt.Println("This is default for a")
 	}
 
+	//slice defined...will be covered later
 	list := []int{1, 2, 3, 4, 5}
 	for index, value := range list {
 		fmt.Printf("Value at index %v: %v\n", index, value)
 	}
 
+	//map defined....will be covered later
 	m := map[string]int{
 		"Praveen": 42,
 		"Sanjo":   41,
@@ -89,6 +91,7 @@ func main() {
 	age = m["Bond"]
 	fmt.Printf("Age of Bond: %v\n", age)
 
+	//, ok Idiom
 	if age, ok := m["Bond"]; !ok {
 		fmt.Printf("Age of Bond is not available and hence its %v\n", age)
 	}
