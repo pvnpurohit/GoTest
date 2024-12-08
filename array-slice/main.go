@@ -10,6 +10,10 @@ func main() {
 	//array creation; [3] tells its fixed size
 	a := [3]int{1, 2, 3}
 	fmt.Println(a)
+	//print using printf
+	fmt.Printf("%v\n", a)
+	//print using # in printf
+	fmt.Printf("%#v\n", a)
 
 	//array size is auto determined; [...] tells that
 	b := [...]string{"Hello", "Praveen"}
@@ -57,7 +61,8 @@ func main() {
 	s = append(s[:3], s[4:]...)
 	fmt.Println(s)
 
-	//slice creation using make function; 10 denotes size and 0 denotes no initial values in the list
+	//slice creation using make function; 10 denotes size and 0 denotes no initial values in the list and when you append a value, it will be at 0th position
+	//Hence length will be 0 and capacity will be 10 for this slice
 	slice := make([]int, 0, 10)
 	fmt.Println(slice)
 	fmt.Println(len(slice))
@@ -88,6 +93,8 @@ func main() {
 	fmt.Println(slice1)
 
 	//Copying the values to avoid changing both the slices
+	//make here will setup array of 15 elements and all elements will be 0 since we have not passed 0 as second argument (indicating 0 length) and hence length will be 15
+	// and capacity will be 15
 	slice2 := make([]int, 15)
 	copy(slice2, slice)
 	slice[14] = 15
